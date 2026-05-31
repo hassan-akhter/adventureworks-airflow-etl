@@ -28,10 +28,10 @@ End-to-end data engineering pipeline that ingests the AdventureWorks dataset fro
 ```
 Geography                 Product                   Sales
 ──────────────────        ──────────────────────    ──────────────────────────
-countryregion ◄──┐        productcategory ◄──┐      salesorderheader ◄──┐
-stateprovince    │        productsubcategory  │      salesorderdetail    │
-address ─────────┘        product ────────────┘               │         │
-                                                               └─────────┘
+countryregion             productcategory           salesorderheader 
+stateprovince             productsubcategory        salesorderdetail  
+address                   product
+
 Customer
 ──────────────────
 person
