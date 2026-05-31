@@ -123,7 +123,15 @@ Ten queries answer business questions across revenue, products, customers, and g
 ### Prerequisites
 - Docker ≥ 24 and Docker Compose ≥ 2.20
 
-### 1 — Clone and start containers
+### 1 — Get the data
+
+Download the AdventureWorks dataset from the official Microsoft source:
+
+- [AdventureWorks CSV files — Microsoft SQL Server Samples](https://github.com/Microsoft/sql-server-samples/tree/master/samples/databases/adventure-works)
+
+Place the CSV files in `data/raw/` before running the pipeline.
+
+### 2 — Clone and start containers
 
 ```bash
 git clone https://github.com/hassan-akhter/adventureworks-airflow-etl.git
@@ -133,7 +141,7 @@ docker compose up airflow-init   # one-time DB migration + admin user
 docker compose up -d             # start Postgres, webserver, scheduler
 ```
 
-### 2 — Set up the PostgreSQL schema
+### 3 — Set up the PostgreSQL schema
 
 ```bash
 # Connect to the adventureworks database and run the DDL
@@ -149,7 +157,7 @@ psql -h localhost -U airflow -d adventureworks -f sql/create_tables.sql
 
 Password: `airflow`
 
-### 3 — Trigger the pipeline
+### 4 — Trigger the pipeline
 
 Open the Airflow UI at **http://localhost:8080** (admin / admin), enable the `adventureworks_etl` DAG, and trigger a run manually.
 
@@ -161,7 +169,7 @@ extract → transform → load → summary
 
 Total run time: ~2–3 minutes on a standard laptop.
 
-### 4 — Run analytics queries
+### 5 — Run analytics queries
 
 ```bash
 psql -h localhost -U airflow -d adventureworks -f sql/queries.sql
