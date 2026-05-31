@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Environment / secrets
+.env
+
+# Data folders
+data/
+
+# Airflow runtime artifacts
+logs/
+airflow.db
+airflow.cfg
+standalone_admin_password.txt
+
+# Generated files
+*.pdf
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
