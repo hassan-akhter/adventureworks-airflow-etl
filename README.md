@@ -118,6 +118,39 @@ Ten queries answer business questions across revenue, products, customers, and g
 
 ---
 
+## Business Insights & Executive Analysis
+
+Beyond building the ETL pipeline, the loaded data was analysed using SQL to uncover business trends across revenue, customers, products, channels, and geography.
+
+## Key Findings
+
+| Finding | Insight |
+|---|---|
+| Revenue Growth | Revenue increased from **$16.3M in 2022** to **$49.0M in 2024**, demonstrating strong growth over the analysed period. |
+| Category Concentration | **Bikes generated 87% of total revenue**, creating significant dependency on a single product category. |
+| Customer Retention | **61% of customers made only one purchase**, indicating substantial opportunity for retention and re-engagement strategies. |
+| High-Value Customers | **The top 10 customers contributed approximately $9M** in lifetime revenue, highlighting the importance of key account management. |
+| Product Performance | **238 of 504 products (47%) recorded zero sales**, suggesting opportunities for catalogue optimisation. |
+| Sales Channels | In-store transactions generated significantly higher average order values than online orders despite representing a smaller share of order volume. |
+| Geographic Distribution | 57% of revenue originated from the United States, while European markets showed potential for further growth. |
+
+## Executive Report
+
+A CEO-style executive report was created from the analytical findings to demonstrate how technical data engineering outputs can be translated into actionable business recommendations.
+
+**Report: reports/AdventureWorks_CEO_Report.pdf**
+
+## Recommended Actions
+
+1. Investigate the slowdown in 2025 revenue growth.
+2. Launch customer retention campaigns targeting one-time buyers.
+3. Introduce dedicated account management for high-value customers.
+4. Review and rationalise inactive products.
+5. Expand commercial efforts in underpenetrated European markets.
+
+This project demonstrates the complete data lifecycle: ingestion, transformation, warehousing, analytics, and business decision support.
+
+---
 ## Quick Start
 
 ### Prerequisites
