@@ -2,7 +2,7 @@
 
 End-to-end data engineering pipeline that ingests the AdventureWorks dataset from raw CSV files, cleans and type-casts the data in Python, and loads it into a normalised PostgreSQL schema — all orchestrated by Apache Airflow running in Docker.
 
-**10 tables · 213K+ rows · 4 pipeline stages · 10 analytics queries**
+**10 tables · 213K+ rows · 4 pipeline stages · 10 analytics queries · Executive Business Report**
 
 ---
 
@@ -193,6 +193,8 @@ adventureworks-airflow-etl/
 ├── data/
 │   ├── raw/                      # Source CSV files (committed)
 │   └── processed/                # Pipeline intermediate output (gitignored)
+├── reports
+│    └── AdventureWorks_CEO_Report.pdf   # Executive Business Report
 ├── docker/
 │   └── init_db.sh                # Creates adventureworks DB on first start
 ├── docker-compose.yml
